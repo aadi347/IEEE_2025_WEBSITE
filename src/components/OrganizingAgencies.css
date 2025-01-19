@@ -1,0 +1,61 @@
+/* OrganizingAgencies.css */
+
+/* Base styles for the agency sections */
+.motion-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+  }
+  
+  .motion-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Animations for individual agencies */
+  .motion-preset-fade {
+    animation: fade-in 1s forwards;
+  }
+  
+  .motion-preset-zoom {
+    animation: zoom-in 1s forwards;
+  }
+  
+  .motion-preset-slide {
+    animation: slide-in 1s forwards;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoom-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
