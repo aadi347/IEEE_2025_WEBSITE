@@ -21,7 +21,7 @@ const Home = () => {
   }, [images.length]);
 
   return (
-    <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <div className="relative h-screen text-white overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         {images.map((image, index) => (
           <div
